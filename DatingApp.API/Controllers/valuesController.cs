@@ -21,6 +21,7 @@ namespace DatingApp.API.Controllers
         }
 
         // GET api/values
+        [AllowAnonymous]
         [HttpGet]
         // IActionResult is for Http requests
         // Asnyc request are great to use because it will not block the code and allow other users to send a reuest

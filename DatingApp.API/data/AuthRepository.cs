@@ -38,7 +38,7 @@ namespace DatingApp.API.data
            return true;
         }
 
-        public async Task<User> Resister(User user, string password)
+        public async Task<User> Register(User user, string password)
         {
             byte[] passwordHash, passwordSalt;
             CreatePasswordHash(password , out passwordHash, out passwordSalt);
@@ -68,9 +68,9 @@ namespace DatingApp.API.data
             return false;
         }
 
-        public Task<User> Register(User user, string password)
-        {
-            throw new NotImplementedException();
-        }
+        // public Task<User> Register(User user, string password)
+        // {
+        //     throw new NotImplementedException();
+        // }
     }
 }
